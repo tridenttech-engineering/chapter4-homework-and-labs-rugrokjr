@@ -4,25 +4,37 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  double initialBalance = 0.0;
-  double deposits = 0.0;
-  double withdrawals + 0.0:
-    
-  double endingBalance = 0.0;
+int main()
+{
+    // Used to store balance
+    double balance = 0.0;
 
-  cout << "Initial balance: ";
-  cin >> initialBalance;
-  cout << "Total deposits: ";
-  cin >> deposits;
-  cout << "Total withdrawals: ";
-  cin << withdrawals;
-  
-  endingBalance = initialBalance + deposits - withdrawals;
+    // Used to store total deposits  
+    double totalDeposits = 0.0;
 
-  cout << "Ending balance: $" << endingBalance << endl;
-  return 0;
-} // end of main function
-make clean;
-make hw4-11
-./hw4-11
+    // Used to store total withdrawals
+    double totalWithdrawals = 0.0;
+
+    // Take the beginning balance    
+    cout << "Enter beginning balance: ";
+    cin >> balance;
+
+    // Take the total deposits    
+    cout << "Enter total deposits: ";
+    cin >> totalDeposits;
+
+    // Take the total withdrawals    
+    cout << "Enter total withdrawals: ";
+    cin >> totalWithdrawals;
+
+    // Add total deposits with the balance    
+    balance = balance + totalDeposits;
+
+    // Subtract total withdrawals from the balance    
+    balance = balance - totalWithdrawals;
+
+    // Display the ending balance
+    cout << "Ending balance: $" << balance << endl;
+
+    return 0;
+}

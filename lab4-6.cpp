@@ -16,6 +16,3 @@ int main() {
 
   return 0;
 } // end of main function
-make clean 
-make lab4 - 6
-	./ lab4 - 6

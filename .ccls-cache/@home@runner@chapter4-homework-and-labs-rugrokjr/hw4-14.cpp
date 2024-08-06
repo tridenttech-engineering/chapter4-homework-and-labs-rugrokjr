@@ -14,32 +14,26 @@ int main() {
   double largeperc = 0.0;
   double familyperc = 0.0;
   int total = 0;
-
-  
   cout << "Smalls sold: ";
-    cin >> small;
+  cin >> small;
   cout << "Mediums sold: ";
   cin >> medium;
-  cout >> "Larges sold: ";
-  cin << large;
-  cout >> "Familys sold: ";
-  cin <<family;
-
+  cout << "Larges sold: ";
+  cin >> large;
+  cout << "Familys sold: ";
+  cin >> family;
   total = small + medium + large + family;
-  smallperc= small/total *100
-  mediumperc= medium/total *100
-  largeperc= large/total *100
-  familyperc= family/total *100
 
-    
-  cout >> "Total sold: ";
-  cin <<total;
-  cout >> "Percent Small: %";
-  cin <<smallperc;
-  cout >> "Percent Medium: %";
-  cin <<mediumperc;
-  cout >> "Percent Large: %";
-  cin <<largeperc;
-  cout >> "Percent Family: %" <<familyperc <<endl;
+  if (total > 0) {
+    smallperc = static_cast<double>(small) / total * 100;
+    mediumperc = static_cast<double>(medium) / total * 100;
+    largeperc = static_cast<double>(large) / total * 100;
+    familyperc = static_cast<double>(family) / total * 100;
+  }
+  cout << "Total sold: " << total << endl;
+  cout << "Percent Small: " << smallperc << "%" << endl;
+  cout << "Percent Medium: " << mediumperc << "%" << endl;
+  cout << "Percent Large: " << largeperc << "%" << endl;
+  cout << "Percent Family: " << familyperc << "%" << endl;
   return 0;
 } // end of main function
